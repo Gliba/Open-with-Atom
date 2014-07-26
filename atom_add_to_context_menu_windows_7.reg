@@ -1,0 +1,31 @@
+Windows Registry Editor Version 5.00
+
+
+; Open files
+[HKEY_CLASSES_ROOT\*\shell\Open with Atom]
+@="Edit with Atom"
+"Icon"="C:\\Program Files\\Atom\\atom.exe,0"
+
+[HKEY_CLASSES_ROOT\*\shell\Open with Atom\command]
+@="\"C:\\Program Files\\Atom\\atom.exe\" \"%1\""
+
+; This will make it appear when you right click ON a folder
+; The "Icon" line can be removed if you don't want the icon to appear
+
+[HKEY_CLASSES_ROOT\Directory\shell\sublime]
+@="Open Folder as Atom Project"
+"Icon"="\"C:\\Program Files\\Atom\\atom.exe\",0"
+
+[HKEY_CLASSES_ROOT\Directory\shell\sublime\command]
+@="\"C:\\Program Files\\Atom\\atom.exe\" \"%1\""
+
+
+; This will make it appear when you right click INSIDE a folder
+; The "Icon" line can be removed if you don't want the icon to appear
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\sublime]
+@="Open Folder as Atom Project"
+"Icon"="\"C:\\Program Files\\Atom\\atom.exe\",0"
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\sublime\command]
+@="\"C:\\Program Files\\Atom\\atom.exe\" \"%V\""
